@@ -1,0 +1,41 @@
+---
+title: "Hi, I'm AlbusPhos"
+description: Security-minded systems programmer · Rust tool builder
+template: splash
+hero:
+  tagline: Security-minded systems programmer · CTF / Red Team · Rust tool builder
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: GO
+      link: ./about/
+      icon: right-arrow
+    - text: GitHub
+      link: https://github.com/AlbusPhos
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+
+<CardGrid stagger>
+  <Card title="Blog" icon="pencil">
+    Timeline notes on Rust, reversing and tooling. [All posts](./blog/).
+  </Card>
+  <Card title="Knowledge" icon="open-book">
+    Topic-based notes: Assembly / x86, Rust, Reverse, Tooling, Networking. [Browse Knowledge](./knowledge/).
+  </Card>
+  <Card title="Reverse" icon="magnifier">
+    OLLVM / obfuscation / anti-debug reversing. [Browse Reverse](./writeups/reverse/).
+  </Card>
+  <Card title="PWN" icon="rocket">
+    Binary exploitation. [Browse PWN](./writeups/pwn/).
+  </Card>
+  <Card title="Tooling" icon="setting">
+    obfstr2 · anti-dbg · shell-engine · terminal-mcp. [About me](./about/).
+  </Card>
+  <Card title="GitHub" icon="github">
+    Source code and crates. [AlbusPhos on GitHub](https://github.com/AlbusPhos).
+  </Card>
+</CardGrid>

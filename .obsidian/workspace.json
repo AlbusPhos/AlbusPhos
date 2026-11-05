@@ -1,0 +1,240 @@
+{
+  "main": {
+    "id": "fac732009ce93399",
+    "type": "split",
+    "children": [
+      {
+        "id": "17872fa3e792890e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc81ef6cdd72f165",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/content/docs/knowledge/assembly/x86/registers/general-purpose-registers.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "general-purpose-registers"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "78e3f981e41df324",
+    "type": "split",
+    "children": [
+      {
+        "id": "3afbd11e810838a5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "76d812bb375459eb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "899b5d58fe3e34d2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "d2122f398f8f59db",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ca3acc18603a3fcd",
+    "type": "split",
+    "children": [
+      {
+        "id": "9bf27c285543380f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "893a5adb07bcac56",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "src/content/docs/writeups/reverse/Whereistheflag.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "3c1ded43cdd18aed",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "f2491ce915b34f52",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "049c0b2dc0fd73e2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "7cdf36e3d4a580db",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "src/content/docs/knowledge/assembly/x86/registers/general-purpose-registers.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "fc81ef6cdd72f165",
+  "lastOpenFiles": [
+    "src/content/docs/knowledge/assembly/x86/memory-addressing/addressing-modes.md",
+    "src/content/docs/knowledge/assembly/x86/memory-addressing/rip-relative-and-pic.md",
+    "src/content/docs/knowledge/assembly/x86/memory-addressing/sib-and-composite-addressing.md",
+    "src/content/docs/knowledge/assembly/x86/stack-and-calling/systemv-amd64-abi.md",
+    "src/content/docs/knowledge/assembly/x86/stack-and-calling/stack-mechanics.md",
+    "src/content/docs/knowledge/assembly/x86/stack-and-calling/stack-frame.md",
+    "src/content/docs/knowledge/assembly/x86/stack-and-calling/calling-conventions-32.md",
+    "src/content/docs/knowledge/assembly/x86/registers/segment-and-control-registers.md",
+    "src/content/docs/knowledge/assembly/x86/registers/general-purpose-registers.md",
+    "src/content/docs/knowledge/assembly/x86/registers/flags-and-instruction-pointer.md",
+    "src/content/docs/knowledge/assembly/x86/core-instructions/branch-loop-and-jump-table.md",
+    "src/content/docs/knowledge/assembly/x86/core-instructions/arithmetic.md",
+    "dist/sitemap-0.xml",
+    "dist/sitemap-index.xml",
+    "dist/pagefind/pagefind-entry.json",
+    "dist/pagefind/wasm.unknown.pagefind",
+    "dist/pagefind/pagefind-component-ui.css",
+    "dist/pagefind/pagefind-component-ui.js",
+    "dist/pagefind/pagefind-modular-ui.css",
+    "dist/pagefind/pagefind-modular-ui.js",
+    "dist/pagefind/pagefind-ui.css",
+    "dist/pagefind/pagefind-ui.js",
+    "dist/_astro/peter-phone-btn-logic.jmqNrY52_1z98rs.webp",
+    "dist/_astro/peter-phone-ida-overview.DnDmG1WE_Z172c2Y.webp",
+    "dist/_astro/intro-reverse-ida-main.sbzH44Ry_JalPq.webp",
+    "dist/_astro/Pasted image 20261016152834.C-6XFnRd_2hQJ5J.webp",
+    "dist/_astro/Pasted image 20261016152528.Bw6Ef57x_Z1d3Jlf.webp",
+    "dist/_astro/Pasted image 20261016152351.DYOtsMo1_2tCWOr.webp",
+    "dist/_astro/HelloSmali2-srk-toolbox.FpApqEgY_Z1kycU6.webp",
+    "dist/_astro/Pasted image 20261016155550.sghhjlDA_Z1m7vec.webp",
+    "dist/_astro/Pasted image 20261016180831.m_xVvoov_ZVQSCh.webp",
+    "dist/_astro/houston.CZZyCf7p_xmyrN.webp",
+    "src/content/docs/knowledge/assembly/x86/core-instructions/compare-and-conditional.md",
+    "src/content/docs/knowledge/assembly/x86/core-instructions/data-transfer.md",
+    "src/content/docs/knowledge/assembly/x86/core-instructions/logic-bit-and-shift.md",
+    "src/content/docs/knowledge/assembly/x86/core-instructions/string-instructions.md",
+    "src/content/docs/knowledge/assembly/x86/engineering/compiler-patterns.md",
+    "src/content/docs/knowledge/assembly/x86/foundations/cpu-and-machine-model.md",
+    "src/content/docs/knowledge/assembly/x86/memory-addressing/data-layout-and-alignment.md",
+    "src/content/docs/about.md",
+    "src/content/docs/knowledge/assembly/x86/foundations/toolchain-and-syntax.md",
+    "src/content/docs/knowledge/assembly/x86/foundations/x86-evolution.md",
+    "src/content/docs/math-test.md",
+    "src/content/docs/knowledge/assembly/x86/foundations/data-representation.md",
+    "src/content/docs/knowledge/assembly/x86/engineering/reverse-engineering-workflow.md",
+    "src/content/docs/knowledge/assembly/x86/engineering/platform-and-binary-formats.md"
+  ]
+}

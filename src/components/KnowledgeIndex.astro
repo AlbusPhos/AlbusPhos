@@ -1,0 +1,170 @@
+---
+import { getCollection } from "astro:content";
+
+interface Props {
+    directory?: string;
+}
+
+const { directory } = Astro.props;
+
+const basePrefix = directory
+    ? `${directory.replace(/\/$/, "")}/`
+    : "knowledge/";
+
+// Content Layer 的 entry id 是「去掉扩展名、并剥掉尾部 /index」的 slug，
+// 因此 index.mdx 的 id 会退化成它所在目录的路径（如 knowledge/reverse/index.mdx => knowledge/reverse）。
+// 只能靠 filePath 判定落地页，不能用 id 形态。
+const isIndexEntry = (filePath?: string) =>
+    /\/index\.mdx?$/.test(filePath ?? "");
+
+const allEntries = await getCollection("docs", ({ id, data }) => {
+    if (!id.startsWith("knowledge/")) return false;
+    if (id.includes("_template")) return false;
+    if ((data as Record<string, unknown>).draft === true) return false;
+    if (!id.startsWith(basePrefix)) return false;
+    return true;
+});
+
+const getTime = (e: (typeof allEntries)[number]) => {
+    const d = e.data as Record<string, any>;
+    const t =
+        d.updated instanceof Date
+            ? d.updated.getTime()
+            : d.date instanceof Date
+              ? d.date.getTime()
+              : 0;
+    return t;
+};
+
+// 排序唯一来源是 Starlight 的 sidebar.order；knowledgeFields 未定义顶层 order。
+const orderOf = (e: (typeof allEntries)[number]) => {
+    const o = (e.data as Record<string, any>).sidebar?.order;
+    return typeof o === "number" ? o : Number.MAX_SAFE_INTEGER;
+};
+
+const directArticles: (typeof allEntries)[number][] = [];
+
+// 子目录信息，包含可选的 index 文档数据
+interface SubDirInfo {
+    count: number;
+    title?: string;
+    description?: string;
+    order?: number;
+}
+
+const subDirMap = new Map<string, SubDirInfo>();
+
+for (const e of allEntries) {
+    const rel = e.id.slice(basePrefix.length);
+    const slashIdx = rel.indexOf("/");
+
+    if (slashIdx === -1) {
+        // 本层直属条目：落地页（index）作为子目录登记，其余才是文章
+        if (isIndexEntry(e.filePath)) {
+            const info = subDirMap.get(rel) ?? { count: 0 };
+            const d = e.data as Record<string, any>;
+            if (typeof d.title === "string") info.title = d.title;
+            if (typeof d.description === "string")
+                info.description = d.description;
+            if (typeof d.sidebar?.order === "number")
+                info.order = d.sidebar.order;
+            subDirMap.set(rel, info);
+        } else {
+            directArticles.push(e);
+        }
+        continue;
+    }
+
+    const subdir = rel.slice(0, slashIdx);
+    const info = subDirMap.get(subdir) ?? { count: 0 };
+    // 子目录下的落地页不计入文章数
+    if (!isIndexEntry(e.filePath)) info.count += 1;
+    subDirMap.set(subdir, info);
+}
+
+directArticles.sort(
+    (a, b) =>
+        orderOf(a) - orderOf(b) ||
+        getTime(b) - getTime(a) ||
+        a.id.localeCompare(b.id),
+);
+
+const subDirs = [...subDirMap.entries()]
+    .map(([name, info]) => ({ name, ...info }))
+    .sort((a, b) => {
+        // 若 index 页设置了 sidebar.order，优先按 order 排序；否则按名称
+        if (a.order !== undefined && b.order !== undefined)
+            return a.order - b.order || a.name.localeCompare(b.name);
+        if (a.order !== undefined) return -1;
+        if (b.order !== undefined) return 1;
+        return a.name.localeCompare(b.name);
+    });
+
+const base = import.meta.env.BASE_URL.endsWith("/")
+    ? import.meta.env.BASE_URL.slice(0, -1)
+    : import.meta.env.BASE_URL;
+
+const hrefOf = (id: string) => `${base}/${id}/`;
+const hrefOfDir = (dirPath: string) => `${base}/${dirPath}/`;
+
+const total = directArticles.length + subDirs.length;
+---
+
+{total === 0 ? (
+    <p>
+        <em>该分区暂无沉淀文章，持续更新中。</em>
+    </p>
+) : (
+    <>
+        {/* 二级标题：子目录 / 专题 */}
+        {subDirs.length > 0 && (
+            <section>
+                <h3>子分类</h3>
+                <ul>
+                    {subDirs.map((d) => (
+                        <li>
+                            <a href={hrefOfDir(`${basePrefix}${d.name}`)}>
+                                <strong>{d.title ?? d.name}</strong>
+                            </a>
+                            {d.description ? <> — {d.description}</> : null}{" "}
+                            <small>（{d.count} 篇）</small>
+                        </li>
+                    ))}
+                </ul>
+            </section>
+        )}
+
+        {/* 二级标题：直属文章 */}
+        {directArticles.length > 0 && (
+            <section>
+                <h3>文章</h3>
+                <ul>
+                    {directArticles.map((e) => {
+                        const d = e.data as Record<string, any>;
+                        return (
+                            <li>
+                                <a href={hrefOf(e.id)}>{e.data.title}</a>
+                                {e.data.description ? (
+                                    <> — {e.data.description}</>
+                                ) : null}
+                                <!-- {d.status ? (
+                                    <>
+                                        {" "}
+                                        <span class="sl-badge">{d.status}</span>
+                                    </>
+                                ) : null} -->
+                            </li>
+                        );
+                    })}
+                </ul>
+            </section>
+        )}
+
+        <p>
+            <small>
+                共 {total} 项（{subDirs.length} 个子目录，
+                {directArticles.length} 篇文章）。
+            </small>
+        </p>
+    </>
+)}

@@ -1,0 +1,102 @@
+---
+import { getCollection } from "astro:content";
+
+interface Props {
+    /** 按 category 精确过滤，如 "Reverse"；不传则列出全部 Writeup */
+    category?: string;
+    /** 按 event 精确过滤，如 "Bugku CTF"；不传则不过滤 */
+    event?: string;
+}
+
+const { category, event } = Astro.props;
+
+const entries = (
+    await getCollection("docs", ({ id, data }) => {
+        if (!id.startsWith("writeups/")) return false;
+        if (id.includes("_template")) return false;
+        // 落地页（writeups/、writeups/reverse/ …）只有 ≤2 段，正文固定在三级路径 writeups/<category>/<slug>
+        if (id.split("/").length < 3) return false;
+        if ((data as Record<string, unknown>).draft === true) return false;
+        if (category && (data as Record<string, unknown>).category !== category)
+            return false;
+        if (event && (data as Record<string, unknown>).event !== event)
+            return false;
+        return true;
+    })
+).sort((a, b) => {
+    const da = a.data.date instanceof Date ? a.data.date.getTime() : 0;
+    const db = b.data.date instanceof Date ? b.data.date.getTime() : 0;
+    return db - da;
+});
+
+const base = import.meta.env.BASE_URL.endsWith("/")
+    ? import.meta.env.BASE_URL.slice(0, -1)
+    : import.meta.env.BASE_URL;
+const hrefOf = (id: string) => `${base}/${id.replace(/\.mdx?$/, "")}/`;
+const fmtDate = (d: unknown) =>
+    d instanceof Date ? d.toISOString().slice(0, 10) : "—";
+---
+
+{entries.length === 0 ? (
+    <p>
+        <em>暂无文章，持续更新中。</em>
+    </p>
+) : (
+    <>
+        <table>
+            <thead>
+                <tr>
+                    <th>题目</th>
+                    <th>日期</th>
+                    <th>难度</th>
+                    <th>技术</th>
+                </tr>
+            </thead>
+            <tbody>
+                {entries.map((e) => {
+                    const d = e.data as Record<string, any>;
+                    return (
+                        <tr>
+                            <td>
+                                <a href={hrefOf(e.id)}>{e.data.title}</a>
+                                <br />
+                                <small>{e.data.description ?? ""}</small>
+                            </td>
+                            <td>
+                                <time>{fmtDate(d.date)}</time>
+                                {d.event ? (
+                                    <>
+                                        <br />
+                                        <small>{d.event}</small>
+                                    </>
+                                ) : null}
+                            </td>
+                            <td>
+                                {d.difficulty ? (
+                                    <span class="sl-badge">{d.difficulty}</span>
+                                ) : (
+                                    "—"
+                                )}
+                            </td>
+                            <td>
+                                {Array.isArray(d.technique) &&
+                                d.technique.length > 0
+                                    ? d.technique
+                                          .map((t: string) => <code>{t}</code>)
+                                          .reduce((acc: any, node: any) => (
+                                              <>
+                                                  {acc} {node}
+                                              </>
+                                          ))
+                                    : "—"}
+                            </td>
+                        </tr>
+                    );
+                })}
+            </tbody>
+        </table>
+        <p>
+            <small>共 {entries.length} 篇，按日期倒序。</small>
+        </p>
+    </>
+)}

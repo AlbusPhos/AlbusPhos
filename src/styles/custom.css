@@ -1,0 +1,307 @@
+/**
+ * ==============================================================================
+ * Theme: Rosé Pine for Astro Starlight
+ * Variant: Light = Dawn | Dark = Moon
+ * Primary Accent: Rose | Secondary Accent: Iris
+ * ==============================================================================
+ */
+
+/* ------------------------------------------------------------------------------
+ *  全局度量令牌 (Global Design Tokens)
+ * ------------------------------------------------------------------------------ */
+:root {
+	/* 布局版心 */
+	--sl-content-width: 48rem;
+
+	/* 全局圆角系统 (Radii System) */
+	--radius-inline: 6px;
+	--radius-tab: 6px;
+	--radius-code: 8px;
+	--radius-card: 10px;
+}
+
+/* ------------------------------------------------------------------------------
+ *  浅色主题令牌 (Light Theme: Rosé Pine Dawn)
+ * ------------------------------------------------------------------------------ */
+:root {
+	/* --- 背景与表面 (Surfaces) --- */
+	--sl-color-bg: #faf4ed;
+	--sl-color-bg-nav: #fffaf3;
+	--sl-color-bg-sidebar: #fffaf3;
+	--sl-color-bg-inline-code: #f2e9e1;
+	--sl-color-backdrop-overlay: hsla(249, 12%, 34%, 0.66);
+
+	/* --- 品牌与主强调色 (Rose / Iris) --- */
+	--sl-color-accent-low: #f5e3e1;
+	--sl-color-accent: #d7827e;
+	--sl-color-accent-high: #a85570;
+	--sl-color-bg-accent: #a85570;
+
+	/* --- 文本与排版 (Typography) --- */
+	--sl-color-text: #575279;
+	--sl-color-text-accent: #a85570;
+	--sl-color-text-invert: #faf4ed;
+
+	/* --- 灰阶与中性色彩 (Neutral & Grays) --- */
+	--sl-color-white: #575279;
+	--sl-color-gray-1: #575279;
+	--sl-color-gray-2: #6e6a86;
+	--sl-color-gray-3: #6e6980;
+	--sl-color-gray-4: #9893a5;
+	--sl-color-gray-5: #dfdad9;
+	--sl-color-gray-6: #f2e9e1;
+	--sl-color-gray-7: #fffaf3;
+	--sl-color-black: #fffaf3;
+
+	/* --- 分割线与边框 (Hairlines & Borders) --- */
+	--sl-color-hairline: #dfdad9;
+	--sl-color-hairline-light: #f2e9e1;
+	--sl-color-hairline-shade: #cecacd;
+
+	/* --- 语义状态色 (Semantic / Status Colors) --- */
+	--sl-color-green-low: #e4edec;
+	--sl-color-green: #286983;
+	--sl-color-green-high: #1f4e5f;
+
+	--sl-color-orange-low: #f9edd8;
+	--sl-color-orange: #c08a2d;
+	--sl-color-orange-high: #7d5a16;
+
+	--sl-color-red-low: #f7e3e6;
+	--sl-color-red: #b4637a;
+	--sl-color-red-high: #8e3f57;
+
+	--sl-color-blue-low: #e2eef0;
+	--sl-color-blue: #56949f;
+	--sl-color-blue-high: #386e77;
+
+	--sl-color-purple-low: #ece5f1;
+	--sl-color-purple: #907aa9;
+	--sl-color-purple-high: #6b5583;
+
+	/* --- 滚动条令牌 (Scrollbars) --- */
+	--sl-color-scrollbar-track: transparent;
+	--sl-color-scrollbar-thumb: #dfdad9;
+	--sl-color-scrollbar-thumb-hover: #9893a5;
+	--sl-color-scrollbar-thumb-active: var(--sl-color-accent);
+}
+
+/* ------------------------------------------------------------------------------
+ *  深色主题令牌 (Dark Theme: Rosé Pine Moon)
+ * ------------------------------------------------------------------------------ */
+:root[data-theme='dark'] {
+	/* --- 背景与表面 (Surfaces) --- */
+	--sl-color-bg: #1f1d2b;
+	--sl-color-bg-nav: #242230;
+	--sl-color-bg-sidebar: #242230;
+	--sl-color-bg-inline-code: #262436;
+	--sl-color-backdrop-overlay: hsla(246, 15%, 12%, 0.66);
+
+	/* --- 品牌与主强调色 (Rose / Iris) --- */
+	--sl-color-accent-low: #2a273f;
+	--sl-color-accent: #eb6f92;
+	--sl-color-accent-high: #c4a7e7;
+	--sl-color-bg-accent: #c4a7e7;
+
+	/* --- 文本与排版 (Typography) --- */
+	--sl-color-text: #c7c4da;
+	--sl-color-text-accent: #d8869b;
+	--sl-color-text-invert: #1f1d2b;
+
+	/* --- 灰阶与中性色彩 (Neutral & Grays) --- */
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #e0def4;
+	--sl-color-gray-2: #c7c4da;
+	--sl-color-gray-3: #908caa;
+	--sl-color-gray-4: #6e6a86;
+	--sl-color-gray-5: #393552;
+	--sl-color-gray-6: #2a273f;
+	--sl-color-gray-7: #2a273f;
+	--sl-color-black: #1f1d2b;
+
+	/* --- 分割线与边框 (Hairlines & Borders) --- */
+	--sl-color-hairline: #44415a;
+	--sl-color-hairline-light: #393552;
+	--sl-color-hairline-shade: #232136;
+
+	/* --- 语义状态色 (Semantic / Status Colors) --- */
+	--sl-color-green-low: #1f3237;
+	--sl-color-green: #3e8fb0;
+	--sl-color-green-high: #9ccfd8;
+
+	--sl-color-orange-low: #3a2f22;
+	--sl-color-orange: #f6c177;
+	--sl-color-orange-high: #fae3b8;
+
+	--sl-color-red-low: #3d2a33;
+	--sl-color-red: #eb6f92;
+	--sl-color-red-high: #f5b9c9;
+
+	--sl-color-blue-low: #22373c;
+	--sl-color-blue: #9ccfd8;
+	--sl-color-blue-high: #cfe9ed;
+
+	--sl-color-purple-low: #322a45;
+	--sl-color-purple: #c4a7e7;
+	--sl-color-purple-high: #ddd0f2;
+
+	/* --- 滚动条令牌 (Scrollbars) --- */
+	--sl-color-scrollbar-track: transparent;
+	--sl-color-scrollbar-thumb: #393552;
+	--sl-color-scrollbar-thumb-hover: #6e6a86;
+	--sl-color-scrollbar-thumb-active: var(--sl-color-accent-high);
+}
+
+/* ------------------------------------------------------------------------------
+ *  基础交互与文本选区 (Base Interactivity & Selection)
+ * ------------------------------------------------------------------------------ */
+::selection {
+	background: rgb(215 130 126 / 0.28);
+	color: var(--sl-color-text);
+}
+
+:root[data-theme='dark'] ::selection {
+	background: rgb(196 167 231 / 0.32);
+	color: #e0def4;
+}
+
+/* 原生 Select 控制组件定制 (OpenUI Draft) */
+:root select {
+	appearance: base-select;
+}
+
+:root ::picker-icon {
+	display: none;
+}
+
+/* ------------------------------------------------------------------------------
+ *  代码高亮引擎定制 (Expressive Code Tokens)
+ * ------------------------------------------------------------------------------ */
+:root .expressive-code {
+	--ec-codeSelBg: rgb(110 106 134 / 0.22);
+	--ec-uiSelBg: rgb(215 130 126 / 0.26);
+	--ec-focusBrd: rgb(168 85 112 / 0.55);
+}
+
+:root[data-theme='dark'] .expressive-code {
+	--ec-codeSelBg: rgb(129 124 156 / 0.38);
+	--ec-uiSelBg: rgb(196 167 231 / 0.3);
+	--ec-focusBrd: rgb(196 167 231 / 0.65);
+}
+
+/* ------------------------------------------------------------------------------
+ *  全局滚动条美化系统 (Global Scrollbar System)
+ * ------------------------------------------------------------------------------ */
+/* W3C 标准语法 (Firefox 64+ / Chrome 121+) */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--sl-color-scrollbar-thumb) var(--sl-color-scrollbar-track);
+}
+
+/* WebKit / Blink 私有内核滚动条定制 */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--sl-color-scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--sl-color-scrollbar-thumb);
+	border-radius: 9999px;
+	border: 2px solid transparent;
+	background-clip: content-box;
+	transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: var(--sl-color-scrollbar-thumb-hover);
+}
+
+::-webkit-scrollbar-thumb:active {
+	background-color: var(--sl-color-scrollbar-thumb-active);
+}
+
+::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+/* ------------------------------------------------------------------------------
+ *  Starlight 组件层样式覆写 (Component Layer Overrides)
+ * ------------------------------------------------------------------------------ */
+@layer starlight.components {
+	/* 代码块与复制按钮 (Expressive Code UI) */
+	.expressive-code {
+		--ec-brdRad: var(--radius-code);
+		--ec-frm-edTabBrdRad: var(--radius-tab);
+	}
+
+	.expressive-code .copy button,
+	.expressive-code .copy .feedback {
+		border-radius: var(--radius-inline);
+	}
+
+	/* 文档行内元素与微标 (Inline Code & Badges) */
+	.sl-markdown-content code:not(pre code),
+	.sl-badge {
+		border-radius: var(--radius-inline);
+	}
+
+	/* 提示框与卡片 (Asides & Cards) */
+	.starlight-aside {
+		border: 1px solid var(--sl-color-hairline);
+		border-inline-start: 3px solid var(--sl-color-asides-border);
+		border-radius: var(--radius-card);
+	}
+
+	.card {
+		border-radius: var(--radius-card);
+	}
+
+	/* 导航控制器无障碍焦点环 (Accessibility Focus Ring) */
+	starlight-theme-select select:focus-visible,
+	starlight-lang-select select:focus-visible {
+		outline: 2px solid var(--sl-color-accent-high);
+		border-radius: 0.2rem;
+	}
+
+	/* 图片放大模态框定制 (Starlight Image Zoom) */
+	body.starlight-image-zoom-opened .starlight-image-zoom-dialog {
+		background: var(--sl-color-bg) !important;
+	}
+
+	body.starlight-image-zoom-opened .starlight-image-zoom-dialog img {
+		border-radius: var(--radius-tab);
+	}
+
+	/* Mermaid 架构图弹窗适配 */
+	body.starlight-image-zoom-opened .starlight-image-zoom-dialog img[data-zoom-id^="mermaid-"] {
+		width: 90vw !important;
+		height: 85vh !important;
+		top: 7.5vh !important;
+		left: 5vw !important;
+		object-fit: contain;
+	}
+
+	/* Mermaid 渲染图防位移与折叠面板 (CLS Prevention) */
+	.sl-markdown-content details picture img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin: 0.5rem auto;
+		transition: opacity 0.15s ease;
+	}
+
+	.sl-markdown-content details {
+		overflow-x: auto;
+	}
+
+	/* KaTeX 数学公式移动端横向防溢出 */
+	.sl-markdown-content .katex-display {
+		overflow-x: auto;
+		overflow-y: hidden;
+		padding-block: 0.25rem;
+	}
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://albusphos.github.io/AlbusPhos/sitemap-index.xml
