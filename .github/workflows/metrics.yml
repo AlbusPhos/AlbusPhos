@@ -29,6 +29,7 @@ jobs:
           base: ""
           plugins_errors_fatal: no
 
+
           # 等距提交日历（使用 half-year 避免 3D 日历过长遮挡右侧文字）
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
