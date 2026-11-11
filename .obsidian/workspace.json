@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/docs/knowledge/assembly/x86/registers/general-purpose-registers.md",
+                "file": "src/content/docs/knowledge/assembly/x86/engineering/performance-optimization.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "general-purpose-registers"
+              "title": "performance-optimization"
             }
           }
         ]
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/docs/knowledge/assembly/x86/registers/general-purpose-registers.md",
+                "file": "src/content/docs/knowledge/assembly/x86/engineering/performance-optimization.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,6 +190,15 @@
   },
   "active": "fc81ef6cdd72f165",
   "lastOpenFiles": [
+    "src/content/docs/knowledge/assembly/x86/engineering/obfuscation-and-antidebug.md",
+    "src/content/docs/knowledge/assembly/x86/engineering/inline-asm-and-mixed-programming.md",
+    "src/content/docs/knowledge/assembly/x86/foundations/data-representation.md",
+    "src/content/docs/knowledge/assembly/x86/foundations/x86-evolution.md",
+    "src/content/docs/knowledge/assembly/x86/foundations/toolchain-and-syntax.md",
+    "src/content/docs/knowledge/assembly/x86/foundations/cpu-and-machine-model.md",
+    "src/content/docs/knowledge/assembly/x86/registers/flags-and-instruction-pointer.md",
+    "src/content/docs/knowledge/assembly/x86/registers/segment-and-control-registers.md",
+    "src/content/docs/knowledge/assembly/x86/registers/general-purpose-registers.md",
     "src/content/docs/knowledge/assembly/x86/memory-addressing/addressing-modes.md",
     "src/content/docs/knowledge/assembly/x86/memory-addressing/rip-relative-and-pic.md",
     "src/content/docs/knowledge/assembly/x86/memory-addressing/sib-and-composite-addressing.md",
@@ -197,9 +206,6 @@
     "src/content/docs/knowledge/assembly/x86/stack-and-calling/stack-mechanics.md",
     "src/content/docs/knowledge/assembly/x86/stack-and-calling/stack-frame.md",
     "src/content/docs/knowledge/assembly/x86/stack-and-calling/calling-conventions-32.md",
-    "src/content/docs/knowledge/assembly/x86/registers/segment-and-control-registers.md",
-    "src/content/docs/knowledge/assembly/x86/registers/general-purpose-registers.md",
-    "src/content/docs/knowledge/assembly/x86/registers/flags-and-instruction-pointer.md",
     "src/content/docs/knowledge/assembly/x86/core-instructions/branch-loop-and-jump-table.md",
     "src/content/docs/knowledge/assembly/x86/core-instructions/arithmetic.md",
     "dist/sitemap-0.xml",
@@ -227,14 +233,8 @@
     "src/content/docs/knowledge/assembly/x86/core-instructions/logic-bit-and-shift.md",
     "src/content/docs/knowledge/assembly/x86/core-instructions/string-instructions.md",
     "src/content/docs/knowledge/assembly/x86/engineering/compiler-patterns.md",
-    "src/content/docs/knowledge/assembly/x86/foundations/cpu-and-machine-model.md",
     "src/content/docs/knowledge/assembly/x86/memory-addressing/data-layout-and-alignment.md",
     "src/content/docs/about.md",
-    "src/content/docs/knowledge/assembly/x86/foundations/toolchain-and-syntax.md",
-    "src/content/docs/knowledge/assembly/x86/foundations/x86-evolution.md",
-    "src/content/docs/math-test.md",
-    "src/content/docs/knowledge/assembly/x86/foundations/data-representation.md",
-    "src/content/docs/knowledge/assembly/x86/engineering/reverse-engineering-workflow.md",
-    "src/content/docs/knowledge/assembly/x86/engineering/platform-and-binary-formats.md"
+    "src/content/docs/math-test.md"
   ]
 }

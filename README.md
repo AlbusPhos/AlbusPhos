@@ -4,7 +4,6 @@
 
 **Security-minded systems programmer · CTF / Red Team · Rust tool builder**
 
-![GitHub followers](https://img.shields.io/github/followers/AlbusPhos?style=for-the-badge&logo=github)
 
 [![Blog](https://img.shields.io/badge/Blog-timeline_notes-d7827e?style=for-the-badge&logo=pencil)](https://AlbusPhos.github.io/AlbusPhos/blog/) [![Knowledge](https://img.shields.io/badge/Knowledge-topic_notes-907aa9?style=for-the-badge&logo=open-book)](https://AlbusPhos.github.io/AlbusPhos/knowledge/) [![Writeups](https://img.shields.io/badge/Writeups-CTF_WP-56949f?style=for-the-badge&logo=flag)](https://AlbusPhos.github.io/AlbusPhos/writeups/)
 
@@ -36,8 +35,6 @@
 
 ### My Setup
 
-**Laptop** — Lenovo XiaoXinAir 15ITL 2021 (i5-1135G7 + MX450 + Iris Xe)
-
 [![Kali](https://img.shields.io/badge/Kali_Linux-2777ff?style=for-the-badge&logo=kalilinux&logoColor=white)](https://www.kali.org/) [![niri](https://img.shields.io/badge/niri-Wayland-D3865A?style=for-the-badge)](https://github.com/niri-wm/niri)
 
 ---
@@ -46,10 +43,10 @@
 
 <div align="center">
 
-[![GitHub Stats](https://github-readme-stats-one-bice.vercel.app/api?username=AlbusPhos&show_icons=true&include_all_commits=true&count_private=false&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR)](https://github.com/AlbusPhos)
-[![Top Languages](https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=AlbusPhos&layout=compact&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR)](https://github.com/AlbusPhos)
+![Metrics](./.github/assets/metrics.svg)
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=AlbusPhos&theme=default)](https://git.io/streak-stats)
+<a href="https://github.com/AlbusPhos"><img height="165" src="https://github-readme-stats-one-bice.vercel.app/api?username=AlbusPhos&show_icons=true&include_all_commits=true&count_private=false&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR" alt="GitHub Stats" /></a>
+<a href="https://git.io/streak-stats"><img height="165" src="https://streak-stats.demolab.com?user=AlbusPhos&theme=default" alt="GitHub Streak" /></a>
 
 </div>
 

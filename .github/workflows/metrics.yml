@@ -1,0 +1,51 @@
+name: Metrics
+
+on:
+  schedule:
+    - cron: "23 18 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Generate metrics
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          filename: .github/assets/metrics.svg
+          committer_branch: main
+          committer_message: "chore(metrics): update metrics.svg [skip ci]"
+          config_timezone: Asia/Shanghai
+          base: ""
+
+          config_display: columns
+          plugins_errors_fatal: no
+
+          # 等距提交日历（Isometric commit calendar）
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          # 语言活动（Languages activity）
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_colors: github
+          plugin_languages_ignored: html, css, scss, less, astro, mdx, tex, dockerfile, makefile, cmake
+
+          # Starred topics（取自 star 过的仓库的话题）
+          plugin_topics: yes
+          plugin_topics_mode: starred
+          plugin_topics_limit: 30
+
+          # 最近 star 的仓库（Recently starred repositories）
+          plugin_starred: yes
+          plugin_starred_limit: 6
