@@ -42,4 +42,4 @@ jobs:
 
           # 最近 star 的仓库（修正参数名：是 plugin_stars 而不是 plugin_starred）
           plugin_stars: yes
-          plugin_stars_limit: 4
+          plugin_stars_limit: 5
