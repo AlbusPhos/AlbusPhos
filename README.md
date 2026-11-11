@@ -4,7 +4,6 @@
 
 **Security-minded systems programmer · CTF / Red Team · Rust tool builder**
 
-
 [![Blog](https://img.shields.io/badge/Blog-timeline_notes-d7827e?style=for-the-badge&logo=pencil)](https://AlbusPhos.github.io/AlbusPhos/blog/) [![Knowledge](https://img.shields.io/badge/Knowledge-topic_notes-907aa9?style=for-the-badge&logo=open-book)](https://AlbusPhos.github.io/AlbusPhos/knowledge/) [![Writeups](https://img.shields.io/badge/Writeups-CTF_WP-56949f?style=for-the-badge&logo=flag)](https://AlbusPhos.github.io/AlbusPhos/writeups/)
 
 </div>
@@ -43,11 +42,11 @@
 
 <div align="center">
 
+<a href="https://github.com/AlbusPhos"><img height="145" src="https://github-readme-stats-one-bice.vercel.app/api?username=AlbusPhos&show_icons=true&include_all_commits=true&count_private=false&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&theme=transparent&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff&border_color=30363d" alt="GitHub Stats" /></a>
+<a href="https://git.io/streak-stats"><img height="145" src="https://streak-stats.demolab.com?user=AlbusPhos&theme=transparent&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=8b949e&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=8b949e&border=30363d" alt="GitHub Streak" /></a>
+
+<br/>
+
 ![Metrics](./.github/assets/metrics.svg)
 
-<a href="https://github.com/AlbusPhos"><img height="165" src="https://github-readme-stats-one-bice.vercel.app/api?username=AlbusPhos&show_icons=&include_all_commits=true&count_private=false&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR" alt="GitHub Stats" /></a> <a href="https://git.io/streak-stats"><img height="165" src="https://streak-stats.demolab.com?user=AlbusPhos&theme=default" alt="GitHub Streak" /></a>
-
-
 </div>
-
----

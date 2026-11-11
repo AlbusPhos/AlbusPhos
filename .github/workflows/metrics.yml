@@ -27,13 +27,11 @@ jobs:
           committer_message: "chore(metrics): update metrics.svg [skip ci]"
           config_timezone: Asia/Shanghai
           base: ""
-
-          config_display: columns
           plugins_errors_fatal: no
 
-          # 等距提交日历（Isometric commit calendar）
+          # 等距提交日历（改为 half-year，彻底解决斜向太长挡住右边文字的问题）
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          plugin_isocalendar_duration: half-year
 
           # 语言活动（Languages activity）
           plugin_languages: yes
