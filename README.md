@@ -24,23 +24,32 @@
 ### Languages & Tools
 
 **Primary**  
-[![Primary](https://skills.syvixor.com/api/icons?i=rust,py,cpp,c,bash&theme=dark)](https://github.com/syvixor/skills-icons)
+[![Primary](https://skills.syvixor.com/api/icons?i=rust,python,cpp,c,bash&theme=dark)](https://github.com/syvixor/skills-icons)
 
 **Also comfortable with**  
-[![Secondary](https://skills.syvixor.com/api/icons?i=js,ts,html,css,wasm,cmake&theme=dark)](https://github.com/syvixor/skills-icons)
+[![Secondary](https://skills.syvixor.com/api/icons?i=java,js,ts,html,css,wasm,cmake&theme=dark)](https://github.com/syvixor/skills-icons)
 
-**IDEs**  
-[![IDEs](https://skills.syvixor.com/api/icons?i=rustrover,clion,pycharm,idea,webstorm&theme=dark)](https://www.jetbrains.com/)
+**IDEs & Editors**  
+[![IDEs](https://skills.syvixor.com/api/icons?i=rustrover,zed,pycharm,clion,idea,webstorm&theme=dark)](https://www.jetbrains.com/)
 
-**Platforms & Tools**  
-[![Tools](https://skills.syvixor.com/api/icons?i=kali,github,cloudflare,tauri,docker&theme=dark)](https://github.com/syvixor/skills-icons)
+**Platforms & Workflow**  
+[![Tools](https://skills.syvixor.com/api/icons?i=kali,llvm,docker,virtualbox,github,cloudflare,tauri,obsidian&theme=dark)](https://github.com/syvixor/skills-icons)
+
+<br/>
+
+### Security & RE Arsenal
+
+[![RE](https://img.shields.io/badge/Reverse-IDA_Pro_·_JEB_·_Jadx_·_ImHex-cba6f7?style=for-the-badge&labelColor=1e1e2e)](https://github.com/AlbusPhos)
+[![RedTeam](https://img.shields.io/badge/Red_Team-Yakit_·_Burp_·_Sliver_C2_·_CyberChef-f38ba8?style=for-the-badge&labelColor=1e1e2e)](https://github.com/AlbusPhos)
 
 <br/>
 
 ### My Setup
 
 [![Kali](https://img.shields.io/badge/Kali_Linux-2777ff?style=for-the-badge&logo=kalilinux&logoColor=white)](https://www.kali.org/)
-[![niri](https://img.shields.io/badge/niri-Wayland-D3865A?style=for-the-badge&logo=wayland&logoColor=white)](https://github.com/niri-wm/niri)
+[![niri](https://img.shields.io/badge/WM-niri_(Wayland)-fab387?style=for-the-badge&logo=wayland&logoColor=1e1e2e&labelColor=1e1e2e)](https://github.com/niri-wm/niri)
+[![Term](https://img.shields.io/badge/Term-foot_+_zsh_+_fuzzel-a6e3a1?style=for-the-badge&logo=gnubash&logoColor=1e1e2e&labelColor=1e1e2e)](https://codeberg.org/dnkl/foot)
+[![Theme](https://img.shields.io/badge/Rice-Catppuccin_Mocha_·_Maple_Mono-f5c2e7?style=for-the-badge&labelColor=1e1e2e)](https://github.com/catppuccin/catppuccin)
 
 </td>
 <td valign="top" width="52%" align="center">
