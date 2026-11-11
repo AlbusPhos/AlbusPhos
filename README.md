@@ -15,32 +15,35 @@
 
 </div>
 
----
+<br/>
 
 <table width="100%">
 <tr>
-<td valign="top" width="50%">
+<td valign="top" width="48%">
 
-### Tech Stack & Tools
+### Languages & Tools
 
 **Primary**  
-[![Primary](https://skillicons.dev/icons?i=rust,py,cpp,c,bash&theme=dark)](https://skillicons.dev)
+[![Primary](https://skills.syvixor.com/api/icons?i=rust,py,cpp,c,bash&theme=dark)](https://github.com/syvixor/skills-icons)
 
 **Also comfortable with**  
-[![Secondary](https://skillicons.dev/icons?i=js,ts,html,css,wasm,cmake&theme=dark)](https://skillicons.dev)
+[![Secondary](https://skills.syvixor.com/api/icons?i=js,ts,html,css,wasm,cmake&theme=dark)](https://github.com/syvixor/skills-icons)
 
-**IDEs & Platforms**  
-[![Tools](https://skillicons.dev/icons?i=clion,pycharm,idea,webstorm,kali,github,cloudflare,tauri,docker&theme=dark&perline=5)](https://skillicons.dev)
+**IDEs**  
+[![IDEs](https://skills.syvixor.com/api/icons?i=rustrover,clion,pycharm,idea,webstorm&theme=dark)](https://www.jetbrains.com/)
+
+**Platforms & Tools**  
+[![Tools](https://skills.syvixor.com/api/icons?i=kali,github,cloudflare,tauri,docker&theme=dark)](https://github.com/syvixor/skills-icons)
 
 <br/>
 
-### Setup
+### My Setup
 
 [![Kali](https://img.shields.io/badge/Kali_Linux-2777ff?style=for-the-badge&logo=kalilinux&logoColor=white)](https://www.kali.org/)
 [![niri](https://img.shields.io/badge/niri-Wayland-D3865A?style=for-the-badge&logo=wayland&logoColor=white)](https://github.com/niri-wm/niri)
 
 </td>
-<td valign="top" width="50%" align="center">
+<td valign="top" width="52%" align="center">
 
 ### Activity & Metrics
 
