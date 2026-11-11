@@ -45,8 +45,8 @@
 
 ![Metrics](./.github/assets/metrics.svg)
 
-<a href="https://github.com/AlbusPhos"><img height="165" src="https://github-readme-stats-one-bice.vercel.app/api?username=AlbusPhos&show_icons=true&include_all_commits=true&count_private=false&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR" alt="GitHub Stats" /></a>
-<a href="https://git.io/streak-stats"><img height="165" src="https://streak-stats.demolab.com?user=AlbusPhos&theme=default" alt="GitHub Streak" /></a>
+<a href="https://github.com/AlbusPhos"><img height="165" src="https://github-readme-stats-one-bice.vercel.app/api?username=AlbusPhos&show_icons=&include_all_commits=true&count_private=false&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR" alt="GitHub Stats" /></a> <a href="https://git.io/streak-stats"><img height="165" src="https://streak-stats.demolab.com?user=AlbusPhos&theme=default" alt="GitHub Streak" /></a>
+
 
 </div>
 
