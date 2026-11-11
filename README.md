@@ -34,11 +34,10 @@
 
 <br/>
 
-### Environment & Setup
+### Setup
 
 [![Kali](https://img.shields.io/badge/Kali_Linux-2777ff?style=for-the-badge&logo=kalilinux&logoColor=white)](https://www.kali.org/)
 [![niri](https://img.shields.io/badge/niri-Wayland-D3865A?style=for-the-badge&logo=wayland&logoColor=white)](https://github.com/niri-wm/niri)
-[![RustRover](https://img.shields.io/badge/RustRover-000000?style=for-the-badge&logo=jetbrains&logoColor=white)](https://www.jetbrains.com/rust/)
 
 </td>
 <td valign="top" width="50%" align="center">
