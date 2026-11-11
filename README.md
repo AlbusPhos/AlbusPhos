@@ -45,7 +45,7 @@
 [![Kali](https://img.shields.io/badge/OS-Kali_Linux-2777ff?style=for-the-badge&logo=kalilinux&logoColor=white&labelColor=1e1e2e)](https://www.kali.org/)
 [![niri](https://img.shields.io/badge/WM-niri_(Wayland)-fab387?style=for-the-badge&logo=wayland&logoColor=white&labelColor=1e1e2e)](https://github.com/niri-wm/niri)  
 [![Term](https://img.shields.io/badge/Term-foot_·_zsh-a6e3a1?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=1e1e2e)](https://codeberg.org/dnkl/foot)
-[![Theme](https://img.shields.io/badge/Rice-Catppuccin_·_Maple-f5c2e7?style=for-the-badge&labelColor=1e1e2e)](https://github.com/catppuccin/catppuccin)
+[![Theme](https://img.shields.io/badge/Rice-Catppuccin-f5c2e7?style=for-the-badge&labelColor=1e1e2e)](https://github.com/catppuccin/catppuccin)
 
 </td>
 <td valign="top" width="52%" align="center">
