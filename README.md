@@ -4,9 +4,9 @@
 
 **Security-minded systems programmer · CTF / Red Team · Rust tool builder**
 
-[![Blog](https://img.shields.io/badge/Blog-timeline_notes-d7827e?style=flat-square&logo=rss&logoColor=white&labelColor=1e1e2e)](https://AlbusPhos.github.io/AlbusPhos/blog/)
-[![Knowledge](https://img.shields.io/badge/Knowledge-topic_notes-907aa9?style=flat-square&logo=obsidian&logoColor=white&labelColor=1e1e2e)](https://AlbusPhos.github.io/AlbusPhos/knowledge/)
-[![Writeups](https://img.shields.io/badge/Writeups-CTF_WP-56949f?style=flat-square&logo=ctftime&logoColor=white&labelColor=1e1e2e)](https://AlbusPhos.github.io/AlbusPhos/writeups/)
+[![Blog](https://img.shields.io/badge/Blog-timeline_notes-d7827e?&logo=rss&logoColor=white&labelColor=1e1e2e)](https://AlbusPhos.github.io/AlbusPhos/blog/)
+[![Knowledge](https://img.shields.io/badge/Knowledge-topic_notes-907aa9?&logo=obsidian&logoColor=white&labelColor=1e1e2e)](https://AlbusPhos.github.io/AlbusPhos/knowledge/)
+[![Writeups](https://img.shields.io/badge/Writeups-CTF_WP-56949f?&logo=ctftime&logoColor=white&labelColor=1e1e2e)](https://AlbusPhos.github.io/AlbusPhos/writeups/)
 
 <br/>
 
@@ -37,15 +37,15 @@
 
 ### Security & RE Arsenal
 
-![IDA Pro](https://img.shields.io/badge/-IDA_Pro-cba6f7?style=flat-square) ![Ghidra](https://img.shields.io/badge/-Ghidra-cba6f7?style=flat-square) ![JEB](https://img.shields.io/badge/-JEB-cba6f7?style=flat-square) ![Jadx](https://img.shields.io/badge/-Jadx-cba6f7?style=flat-square) ![ImHex](https://img.shields.io/badge/-ImHex-cba6f7?style=flat-square)  
-![Yakit](https://img.shields.io/badge/-Yakit-f38ba8?style=flat-square) ![Burp Suite](https://img.shields.io/badge/-Burp_Suite-f38ba8?style=flat-square) ![Sliver C2](https://img.shields.io/badge/-Sliver_C2-f38ba8?style=flat-square) ![CyberChef](https://img.shields.io/badge/-CyberChef-f38ba8?style=flat-square)
+![IDA Pro](https://img.shields.io/badge/-IDA_Pro-cba6f7?) ![Ghidra](https://img.shields.io/badge/-Ghidra-cba6f7?) ![JEB](https://img.shields.io/badge/-JEB-cba6f7?) ![Jadx](https://img.shields.io/badge/-Jadx-cba6f7?) ![ImHex](https://img.shields.io/badge/-ImHex-cba6f7?)  
+![Yakit](https://img.shields.io/badge/-Yakit-f38ba8?) ![Burp Suite](https://img.shields.io/badge/-Burp_Suite-f38ba8?) ![Sliver C2](https://img.shields.io/badge/-Sliver_C2-f38ba8?) ![CyberChef](https://img.shields.io/badge/-CyberChef-f38ba8?)
 
 ### My Setup
 
-[![Kali](https://img.shields.io/badge/OS-Kali_Linux-89b4fa?style=flat-square&logo=kalilinux&logoColor=white&labelColor=1e1e2e)](https://www.kali.org/)
-[![niri](https://img.shields.io/badge/WM-niri_(Wayland)-fab387?style=flat-square&logo=wayland&logoColor=white&labelColor=1e1e2e)](https://github.com/niri-wm/niri)  
-[![Term](https://img.shields.io/badge/Term-foot_·_zsh-a6e3a1?style=flat-square&logo=gnubash&logoColor=white&labelColor=1e1e2e)](https://codeberg.org/dnkl/foot)
-[![Theme](https://img.shields.io/badge/Rice-Catppuccin-f5c2e7?style=flat-square&logo=catppuccin&logoColor=white&labelColor=1e1e2e)](https://github.com/catppuccin/catppuccin)
+[![Kali](https://img.shields.io/badge/OS-Kali_Linux-89b4fa?&logo=kalilinux&logoColor=white&labelColor=1e1e2e)](https://www.kali.org/)
+[![niri](https://img.shields.io/badge/WM-niri_(Wayland)-fab387?&logo=wayland&logoColor=white&labelColor=1e1e2e)](https://github.com/niri-wm/niri)  
+[![Term](https://img.shields.io/badge/Term-foot_·_zsh-a6e3a1?&logo=gnubash&logoColor=white&labelColor=1e1e2e)](https://codeberg.org/dnkl/foot)
+[![Theme](https://img.shields.io/badge/Rice-Catppuccin-f5c2e7?&logo=catppuccin&logoColor=white&labelColor=1e1e2e)](https://github.com/catppuccin/catppuccin)
 
 </td>
 <td valign="top" width="52%">
