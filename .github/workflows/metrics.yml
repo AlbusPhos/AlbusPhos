@@ -42,5 +42,10 @@ jobs:
           plugin_rss_source: https://albusphos.github.io/AlbusPhos/blog/rss.xml
           plugin_rss_limit: 3
 
+
+          plugin_repositories: yes
+          plugin_repositories_featured: AlbusPhos/obfstr2
+          plugin_repositories_affiliations: owner
+
           plugin_stars: yes
           plugin_stars_limit: 3
