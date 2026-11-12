@@ -23,16 +23,12 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: ${{ github.repository_owner }}
           filename: .github/assets/metrics.svg
-          # 专用分支：SVG 只提交到 output 分支（action 会自动创建），
-          # main 的提交历史保持干净，不再被 bot commit 污染
           committer_branch: output
-          # SVG 内容没变化时跳过提交，避免分支堆积无意义 commit
           output_condition: changes
           committer_message: "chore(metrics): update metrics.svg [skip ci]"
           config_timezone: Asia/Shanghai
           base: ""
           plugins_errors_fatal: no
-
 
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
@@ -40,7 +36,11 @@ jobs:
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_colors: github
-          plugin_languages_ignored: html, css
+          plugin_languages_ignored: html, css, scss
+
+          plugin_rss: yes
+          plugin_rss_source: https://albusphos.github.io/AlbusPhos/blog/rss.xml
+          plugin_rss_limit: 3
 
           plugin_stars: yes
-          plugin_stars_limit: 5
+          plugin_stars_limit: 3
