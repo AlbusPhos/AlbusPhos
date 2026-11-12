@@ -24,16 +24,16 @@
 ### Languages & Tools
 
 **Systems & Core**  
-<img src="https://skills.syvixor.com/api/icons?i=rust,cpp,c,python,bash,llvm,cmake&theme=dark" alt="Systems & Core" />
+<img height="35" src="https://skills.syvixor.com/api/icons?i=rust,cpp,c,python,bash,llvm,cmake&theme=dark" alt="Systems & Core" />
 
 **Web & Cross-Platform**  
-<img src="https://skills.syvixor.com/api/icons?i=java,ts,js,html,css,nodejs,tauri&theme=dark" alt="Web & Cross-Platform" />
+<img height="35" src="https://skills.syvixor.com/api/icons?i=java,ts,js,html,css,nodejs,tauri&theme=dark" alt="Web & Cross-Platform" />
 
 **IDEs & Editors**  
-<img src="https://skills.syvixor.com/api/icons?i=rustrover,zed,clion,pycharm,webstorm,obsidian,git&theme=dark" alt="IDEs & Editors" />
+<img height="35" src="https://skills.syvixor.com/api/icons?i=rustrover,zed,clion,pycharm,webstorm,obsidian,git&theme=dark" alt="IDEs & Editors" />
 
 **Platforms & Infra**  
-<img src="https://skills.syvixor.com/api/icons?i=kali,linux,docker,virtualbox,github,cloudflare,sqlite&theme=dark" alt="Platforms & Infra" />
+<img height="35" src="https://skills.syvixor.com/api/icons?i=kali,linux,docker,virtualbox,github,cloudflare,sqlite&theme=dark" alt="Platforms & Infra" />
 
 ### Security & RE Arsenal
 
