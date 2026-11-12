@@ -52,7 +52,7 @@
 
 ### Activity & Metrics
 
-<img src="./.github/assets/metrics.svg" alt="Metrics" width="100%" />
+<img src="https://raw.githubusercontent.com/AlbusPhos/AlbusPhos/output/.github/assets/metrics.svg" alt="Metrics" width="100%" />
 
 </td>
 </tr>
